@@ -24,11 +24,9 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST }}
         run: |
           ssh -o StrictHostKeyChecking=no $REMOTE_USER@$REMOTE_HOST << 'EOF'
-            sudo curl -SL https://github.com/docker/compose/releases/download/v2.28.1/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
             cd ./P3-public3
             git fetch --all
             sudo git pull origin main
-            docker compose up -d
           EOF
 
 
