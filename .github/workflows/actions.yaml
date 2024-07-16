@@ -36,6 +36,7 @@ jobs:
             docker compose up -d
           EOF
 
+
       # - name: Update Docker Image
       #   run: |
       #     docker pull blagotch/docker-frontend-backend-db-api:1.0
