@@ -27,12 +27,13 @@ jobs:
             cd ./P3-public3
             git fetch --all
             sudo git pull origin main
-            docker pull blagotch/docker-frontend-backend-db-api:1.0
-            docker pull blagotch/docker-frontend-backend-db-web:1.0
-            docker pull mongo:4.4.6
-            docker run --name api -d blagotch/docker-frontend-backend-db-api:1.0
-            docker run --name web -d blagotch/docker-frontend-backend-db-web:1.0
-            docker run --name mongo -d mongo:4.4.6
+            # docker pull blagotch/docker-frontend-backend-db-api:1.0
+            # docker pull blagotch/docker-frontend-backend-db-web:1.0
+            # docker pull mongo:4.4.6
+            # docker run --name api -d blagotch/docker-frontend-backend-db-api:1.0
+            # docker run --name web -d blagotch/docker-frontend-backend-db-web:1.0
+            # docker run --name mongo -d mongo:4.4.6
+            docker-compose up -d
           EOF
 
       # - name: Update Docker Image
