@@ -27,7 +27,7 @@ jobs:
             cd ./P3-public3
             git fetch --all
             sudo git pull origin main
-            # docker compose up
+            sudo docker-compose up
           EOF
 
 
