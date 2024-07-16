@@ -22,6 +22,7 @@ jobs:
       env:
         REMOTE_USER: ${{ secrets.USERNAME }}
         REMOTE_HOST: ${{ secrets.HOST }}
+        REMOTE_PORT: ${{ secrets.PORT }}
         #REMOTE_PATH: /var/www/html/nginxTest
       run: |
         ssh -o StrictHostKeyChecking=no $REMOTE_USER@$REMOTE_HOST << 'EOF'
