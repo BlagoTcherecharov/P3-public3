@@ -31,7 +31,9 @@ jobs:
 
       - name: Update Docker Image
         run: |
-          docker pull my-docker-image:latest
+          docker pull blagotch/docker-frontend-backend-db-api
+          docker pull blagotch/docker-frontend-backend-db-web
+          docker pull mongo:4.4.6
           if docker ps -a | grep -q my-container; then
             docker-compose down
           else
