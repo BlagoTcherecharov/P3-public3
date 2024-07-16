@@ -33,5 +33,6 @@ jobs:
         run: |
           docker pull blagotch/docker-frontend-backend-db-api:latest
           docker pull blagotch/docker-frontend-backend-db-web:latest
+          docker pull mongo:4.4.6
           docker-compose down
           docker-compose up -d
