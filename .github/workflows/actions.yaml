@@ -25,7 +25,7 @@ jobs:
         #REMOTE_PATH: /var/www/html/nginxTest
       run: |
         ssh -o StrictHostKeyChecking=no $REMOTE_USER@$REMOTE_HOST << 'EOF'
-          cd ./github
+          cd ./temp/P3-public3
           git fetch --all
           sudo git pull origin main
         EOF
