@@ -36,7 +36,7 @@ const TodoForm = ({ saveTodo }) => {
         />
       </FormGroup>
       <FormGroup>
-        <Label for="description">Description</Label>
+        <Label for="description">Information</Label>
         <Input
           id="description"
           name="description"
