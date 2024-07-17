@@ -39,4 +39,3 @@ jobs:
       #     docker run --name api -d blagotch/docker-frontend-backend-db-api:1.0
       #     docker run --name web -d blagotch/docker-frontend-backend-db-web:1.0
       #     docker run --name mongo -d mongo:4.4.6
-
