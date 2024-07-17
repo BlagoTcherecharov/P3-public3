@@ -26,8 +26,10 @@ jobs:
           ssh -o StrictHostKeyChecking=no $REMOTE_USER@$REMOTE_HOST << 'EOF'
             cd ./P3-public3
             git fetch --all
-            sudo git pull origin main
-            sudo docker-compose up
+            git pull origin main
+            docker-compose up -d
+            sleep 60s
+            docker-compose down
           EOF
 
 
