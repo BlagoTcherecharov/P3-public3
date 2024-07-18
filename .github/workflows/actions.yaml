@@ -27,8 +27,9 @@ jobs:
             cd ./P3-public3
             git fetch --all
             git pull origin main
+            docker-compose build --no-cache
             docker-compose up -d
-            sleep 60s
+            sleep 300s
             docker-compose logs
             docker-compose down
           EOF
